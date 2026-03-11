@@ -1,0 +1,38 @@
+{
+  "name": "nos",
+  "version": "0.0.1",
+  "description": "Next generation of API specifications",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "nos": "./dist/cli/index.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/core/index.d.mts",
+      "import": "./dist/core/index.mjs",
+      "require": "./dist/core/index.cjs"
+    }
+  },
+  "scripts": {
+    "test": "vitest",
+    "build": "tsdown"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "es-toolkit": "^1.43.0",
+    "tsx": "^4.21.0",
+    "typebox": "^1.0.65"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "ts-morph": "^27.0.2",
+    "tsdown": "0.19.0-beta.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0",
+    "vitest": "^4.0.16"
+  }
+}
